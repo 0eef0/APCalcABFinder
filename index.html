@@ -103,7 +103,7 @@
         }
         const openCalcChat = () => {
             const section = document.getElementById('section').value;
-            const lesson = document.getElementById('lesson').value;
+            const lesson = (document.getElementById(lesson).value) ? document.getElementById('lesson').value : 'R';
             const problem = document.getElementById('problem').value;
             window.open(` https://www.calcchat.com/book/Calculus-for-AP-1e/${section}/${lesson}/${problem}/`, '_blank');
         }
